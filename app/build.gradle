@@ -1,0 +1,14 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.namazdua.tracker'
+    compileSdk 34
+    defaultConfig {
+        applicationId "com.namazdua.tracker"
+        minSdk 26          // Android 8.0
+        targetSdk 34       // runs on Android 8 through 16
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes { release { minifyEnabled false } }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
